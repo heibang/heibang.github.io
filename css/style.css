@@ -5,8 +5,9 @@ html {
 	height: 100%;
 }
 body {
-	font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
-	font-size: 100%;
+	font-family: "Microsoft Yahei UI", sans-serif;
+	font-size: 14px;
+	background: #121212;
 }
 h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
@@ -17,20 +18,24 @@ h1, h2, h3, h4, h5, h6, p {
 	margin: 0 auto;
 	padding: 120px 0;
 	letter-spacing: .15rem;
+	color: #eee;
 }
 
 .bull h1 {
 	font-weight: 100;
 	text-align: center;
 	padding-bottom: 20px;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #222222;
 	margin-bottom: 20px;
 }
 .bull p {
 	line-height: 1.8rem;
 	font-size: .95em;
-	color: #666;
+	color: #ddd;
 	margin-top: 16px;
+}
+.bull p b {
+	font-weight: 600;
 }
 .bull .right {
 	text-align: right;
@@ -41,4 +46,9 @@ h1, h2, h3, h4, h5, h6, p {
 .bull .right p {
 	line-height: 24px;
 	margin: 0px;
+}
+.bull a {
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 0.01em;
 }
