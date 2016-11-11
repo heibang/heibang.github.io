@@ -1,0 +1,43 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body {
+	font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+	font-size: 100%;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+.bull {
+	width: 500px;
+	margin: 0 auto;
+	padding: 120px 0;
+}
+
+.bull h1 {
+	font-weight: 100;
+	text-align: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 20px;
+}
+.bull p {
+	line-height: 1.8rem;
+	font-size: .95em;
+	color: #666;
+	margin-top: 16px;
+}
+.bull .right {
+	text-align: right;
+	margin-right: 24px;
+	margin-top: 34px;
+	font-size: 12px;
+}
+.bull .right p {
+	line-height: 24px;
+	margin: 0px;
+}
