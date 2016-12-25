@@ -3,20 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<title>黑榜</title>
-	<link rel="stylesheet" href="css/style.css?hash=c81e728d9d4c2f636f067f89cc14862c">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="bull">
-		<h1>「黑榜」网站公告</h1>
-		<p>尊敬的访问者您好：</p>
-		<p>黑榜是一个开源的匿名中文技术社区，网站上线即采用邀请会员制，网站运营技术团队主要负责服务器维护和规则颁布，网站内容审查与版块、社群都由会员自行设立和管理。</p>
-		<p>网站上线之日即成立“会员管理委员会”和“内容管理委员会”，委员会成员由委员会推荐和自荐产生，会员管理委员会名额11人，内容管理委员会为25人。</p>
-		<p>会员在网站发布的内容不得涉及政治、宗教、民族，内容不得违反中华人民共和国各项法规。如有违反，网站运营团队有权向公安部门提交内容涉及IP地址。</p>
-		<p><b>- 敬请期待</b></p>
-		<div class="right">
-			<p class="right">2016/11/11 &copy; 黑榜运营团队</p>
-			<p class="right">获得邀请：<a href="mailto:invites@heibang.org?subject=%e7%94%b3%e8%af%b7%e9%82%80%e8%af%b7%e8%b5%84%e6%a0%bc&body=%e5%b9%b4%e9%be%84%2b%e6%80%a7%e5%88%ab%2b%e6%92%ad%e5%ae%a2%e5%9c%b0%e5%9d%80">invites@heibang.org</a> （请发送您的博客地址）</p>
-		</div>
+	<div class="form">
+		<form method="post">
+			<div class="form-control form-input">
+				<input type="text" name="" placeholder="账户">
+			</div>
+			<div class="form-control form-input">
+				<input type="password" name="" placeholder="密码">
+				<div class="input-certificate">
+					<input type="file" id="file" accept="application/x-x509-ca-cert">
+					<label for="file"><span class="fa fa-address-card-o"></span></label>
+				</div>
+			</div>
+			<div class="form-control form-footer">
+				<button>
+					<span class="btn-text">登录账户</span>
+				</button>
+			</div>
+			<div class="form-control form-links">
+				<p>只限黑榜成员和联盟组织成员登录（终端只限三次登录）</p>
+			</div>
+		</form>
 	</div>
 </body>
 </html>

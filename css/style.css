@@ -1,54 +1,100 @@
-body,
-html {
+body, html {
 	margin: 0;
 	padding: 0;
 	height: 100%;
 }
-body {
-	font-family: "Microsoft Yahei UI", sans-serif;
-	font-size: 14px;
-	background: #121212;
+::selection{
+	color: none;
+	background: none;
 }
-h1, h2, h3, h4, h5, h6, p {
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Titillium Web", "Microsoft Jhenghei", "SimHei", sans-serif;
+	background: #086ed5;
+	font-size: 18px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.form {
+	width: 360px;
+}
+.form-control{
+	display: block;
+	margin: 10px 0 0;
+	position: relative;
+}
+.form-input input[type="text"],
+.form-input input[type="password"]{
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	font: inherit;
+	width: 100%;
+	background: #e1eaf2;
+	border-radius: 4px;
+	transition: all 0.5s;
+	border: 1px solid #045bb2;
+	box-shadow: inset 0 1px 3px rgba(0,0,0,.2), 0 1px 0 rgba(255,255,255,.1);
+}
+.form-input input[type="file"]{
+	display: none;
+}
+.form-input .input-certificate {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.form-input .input-certificate label{
+	color: #666;
+	width: 28px;
+	height: 28px;
+	display: block;
+	text-align: center;
+}
+.form-input .input-certificate input[value$=".pem"] + label{
+	color: #111;
+}
+.form-control:first-child{
 	margin: 0;
 }
-
-.bull {
-	width: 500px;
-	margin: 0 auto;
-	padding: 120px 0;
-	letter-spacing: .15rem;
-	color: #eee;
+.form-input input:focus {
+	background: #FFF;
+	transition: all 0.5s;
 }
-
-.bull h1 {
-	font-weight: 100;
+.form-footer button {
+	border: 1px solid #045bb2;
+	background: linear-gradient(to bottom,#0e7bef,#0d73da);
+	border: 1px solid 0 1px 2px rgba(0,0,0,.05), inset 0 1px 1px rgba(255,255,255,.15);
+	box-shadow: 0 1px 2px rgba(0,0,0,.05), inset 0 1px 1px rgba(255,255,255,.15);
+	color: rgba(255,255,255,.75);
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+	width: 100%;
+	padding: 10px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	outline: none;
+	font: inherit;
+	font-weight: 900;
+	position: relative;
+}
+.form-footer button:active {
+	border: 1px solid #0659ac;
+	background: -webkit-gradient(linear,left top,left bottom,from(#0e7ceb),to(#0c6fd3));
+	box-shadow: 0 1px 0 rgba(255,255,255,.06), inset 0 1px 2px rgba(0,0,0,.2);
+}
+.form-links {
+	margin-top: 30px;
 	text-align: center;
-	padding-bottom: 20px;
-	border-bottom: 1px solid #222222;
-	margin-bottom: 20px;
 }
-.bull p {
-	line-height: 1.8rem;
-	font-size: .95em;
-	color: #ddd;
-	margin-top: 16px;
-}
-.bull p b {
-	font-weight: 600;
-}
-.bull .right {
-	text-align: right;
-	margin-right: 24px;
-	margin-top: 34px;
-	font-size: 12px;
-}
-.bull .right p {
-	line-height: 24px;
-	margin: 0px;
-}
-.bull a {
+.form-links p {
+	color: #FFF;
 	text-decoration: none;
-	color: #fff;
-	letter-spacing: 0.01em;
+	margin: 0;
+	font-size: 12px;
+	color: rgba(255,255,255,0.4);
+	text-shadow: 0 1px 0 rgba(0,0,0,.2);
 }
